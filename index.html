@@ -1,1 +1,343 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080808">
 
+<title>తెలుగు AURA | అధికారిక ఛానల్</title>
+
+<meta name="description" content="మన తెలుగు వాళ్ల కోసం ప్రత్యేకమైన ఛానల్. ఇప్పుడే మా టెలిగ్రామ్ ఛానల్‌లో చేరండి.">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1836004400744461');
+fbq('track','PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1836004400744461&ev=PageView&noscript=1" alt="">
+</noscript>
+<!-- End Meta Pixel Code -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #080808;
+  --silver: #e6e6e6;
+  --muted: #999999;
+  --line: rgba(255,255,255,.13);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--bg);
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  font-family: 'Noto Sans Telugu', sans-serif;
+  color: #fff;
+  background:
+    radial-gradient(ellipse at 50% 5%, rgba(255,255,255,.09), transparent 43%),
+    radial-gradient(ellipse at 50% 100%, rgba(150,150,150,.07), transparent 42%),
+    #080808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 16px;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: .16;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.15'/%3E%3C/svg%3E");
+}
+
+.page {
+  position: relative;
+  width: 100%;
+  max-width: 410px;
+  border: 1px solid rgba(255,255,255,.17);
+  border-radius: 28px;
+  background: linear-gradient(155deg, rgba(255,255,255,.075), rgba(255,255,255,.015) 38%, rgba(255,255,255,.035));
+  box-shadow:
+    0 30px 100px rgba(0,0,0,.75),
+    inset 0 1px 0 rgba(255,255,255,.12);
+  overflow: hidden;
+  animation: appear .8s ease both;
+}
+
+.page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 14%;
+  right: 14%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  opacity: .8;
+}
+
+.inner {
+  padding: 30px 23px 24px;
+  text-align: center;
+}
+
+.top-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 13px;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  background: rgba(255,255,255,.035);
+  color: #d2d2d2;
+  font-size: 11px;
+  letter-spacing: 1.3px;
+}
+
+.top-label::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #e8e8e8;
+  box-shadow: 0 0 9px rgba(255,255,255,.6);
+}
+
+.logo-frame {
+  position: relative;
+  width: 138px;
+  height: 138px;
+  margin: 25px auto 19px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.58);
+  box-shadow:
+    0 0 0 6px rgba(255,255,255,.025),
+    0 0 40px rgba(255,255,255,.08);
+}
+
+.logo-frame::before {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.09);
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #111;
+}
+
+.brand {
+  font-family: 'Inter', 'Noto Sans Telugu', sans-serif;
+  font-size: clamp(25px, 7.5vw, 34px);
+  line-height: 1.35;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  background: linear-gradient(180deg, #fff 5%, #e0e0e0 35%, #858585 75%, #f4f4f4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 3px 12px rgba(255,255,255,.1));
+}
+
+.divider {
+  width: 76px;
+  height: 2px;
+  margin: 17px auto;
+  background: linear-gradient(90deg, transparent, #e5e5e5, transparent);
+}
+
+.headline {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.65;
+  color: #f6f6f6;
+}
+
+.description {
+  max-width: 300px;
+  margin: 12px auto 0;
+  color: #a9a9a9;
+  font-size: 13px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 24px 0 21px;
+}
+
+.stat {
+  padding: 13px 8px;
+  border: 1px solid rgba(255,255,255,.11);
+  border-radius: 15px;
+  background: rgba(255,255,255,.035);
+}
+
+.stat-title {
+  color: #f1f1f1;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.stat-sub {
+  color: #8f8f8f;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.join-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 58px;
+  padding: 14px 12px;
+  border: 1px solid #f5f5f5;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #f7f7f7, #c7c7c7 55%, #f1f1f1);
+  box-shadow:
+    0 8px 28px rgba(255,255,255,.10),
+    inset 0 1px 0 #fff;
+  color: #101010;
+  font-family: 'Noto Sans Telugu', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.join-btn:active {
+  transform: scale(.98);
+}
+
+.join-btn svg {
+  width: 23px;
+  height: 23px;
+  flex-shrink: 0;
+}
+
+.footer {
+  margin-top: 17px;
+  color: #777;
+  font-size: 10px;
+  letter-spacing: .4px;
+}
+
+.footer span {
+  color: #cfcfcf;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 360px) {
+  body { padding: 12px; }
+  .inner { padding: 23px 17px 19px; }
+  .logo-frame { width: 112px; height: 112px; margin-top: 21px; }
+  .headline { font-size: 19px; }
+  .description { font-size: 12px; }
+  .stats { margin: 18px 0; }
+  .join-btn { min-height: 53px; font-size: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+<main class="page">
+  <div class="inner">
+
+    <div class="top-label">మన తెలుగు కుటుంబం</div>
+
+    <div class="logo-frame">
+      <img class="logo" src="logo.png" alt="తెలుగు Aura లోగో">
+    </div>
+
+    <h1 class="brand">𓆩 తెలుగు AURA 𓆪</h1>
+
+    <div class="divider"></div>
+
+    <h2 class="headline">
+      మన తెలుగు వాళ్ల కోసం<br>
+      ప్రత్యేకమైన ఛానల్ ❤️
+    </h2>
+
+    <p class="description">
+      మన భాష… మన భావం… మనవాళ్లతో<br>
+      కలిసి ముందుకు సాగుదాం!
+    </p>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-title">తెలుగు వారందరికీ</div>
+        <div class="stat-sub">మన అందరి వేదిక</div>
+      </div>
+      <div class="stat">
+        <div class="stat-title">రోజంతా అందుబాటులో</div>
+        <div class="stat-sub">ఎప్పుడైనా చేరవచ్చు</div>
+      </div>
+    </div>
+
+    <a class="join-btn"
+       href="https://t.me/+3xRMWoEjYYphYTg1"
+       target="_blank"
+       rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M21.5 3.2 18.3 20c-.24 1.18-.87 1.47-1.77.92l-4.9-3.62-2.37 2.28c-.26.26-.48.48-.98.48l.35-4.98 9.07-8.2c.39-.35-.08-.55-.6-.2L5.89 13.83l-4.84-1.51c-1.05-.33-1.07-1.05.22-1.56L20.2 3.12c.87-.32 1.63.21 1.3.08Z" fill="currentColor"/>
+      </svg>
+      టెలిగ్రామ్‌లో చేరండి
+    </a>
+
+    <div class="footer">
+      <span>తెలుగు AURA</span> · మన తెలుగు వేదిక
+    </div>
+
+  </div>
+</main>
+</body>
+  </html>
